@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>OSL Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial=scale1">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+  </head>
+  
+  <body>
+    <header>
+      <img id="logo" src="assets/images/Walmart.jpg">
+    </header>
+    
+    <main>     
+      <div id="toc">
+        
+
+  <button class="tocButton selectedButton" ontouchstart="touchStart(event, 'home')" onclick="openTab(event, 'home')">OSL Connect</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'email')" onclick="openTab(event, 'email')">Courriel</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'portals')" onclick="openTab(event, 'portals')">Portail d'activation</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'schedulingPayroll')" onclick="openTab(event, 'schedulingPayroll')">Horaire & Paie</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'recruiting')" onclick="openTab(event, 'recruiting')">Outil de recruitement</button>
+
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'training')" onclick="openTab(event, 'training')">OSL Learn</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'oslfuse')" onclick="openTab(event, 'oslfuse')">OSL FUSE & DOTS</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'safeCodes')" onclick="openTab(event, 'safeCodes')">Codes pour coffre-fort</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'supply')" onclick="openTab(event, 'supply')">Commande des fournitures</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'shipping')" onclick="openTab(event, 'shipping')">Livraison</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'carrierWebsites')" onclick="openTab(event, 'carrierWebsites')">Sites web des fournisseurs</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'carrierRewards')" onclick="openTab(event, 'carrierRewards')">Récompenses et incitatifs</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'manufacturers')" onclick="openTab(event, 'manufacturers')">Sites web des fabricants</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'competitors')" onclick="openTab(event, 'competitors')">Sites web de la concurrence</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'forums')" onclick="openTab(event, 'forums')">Sites de références</button>
+
+
+
+  <button class="tocButton" ontouchstart="touchStart(event, 'walmart')" onclick="openTab(event, 'walmart')">Walmart</button>
+
+
+      </div>
+
+      <div id="tabs">
+        
+
+<div class="tab" id="home">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> OSL Connect</h1>
+  <p><em>Des gens formidables faisant de plus grandes choses, tous les jours</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://osl.opterus.net" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/OSL Connect.png">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="email" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Courriel</h1>
+  <p><em>Cliquez ci-dessous pour accéder à votre courriel:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://portal.microsoftonline.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/email.png">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="portals" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Portail d'activation</h1>
+  <p><em></em></p>
+  <div class="tabButtons">
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://unevue.bell.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Bell.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://unevue.virginplus.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/VirginPlus_RedBlack_RGB.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://unevue.luckymobile.ca" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Lucky Mobile.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://unilogin.rogers.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Rogers_Fido.jpg">
+          </a>
+      </div>
+       
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.chatrwireless.com/chatrbox" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Chatr.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://secure.telusmobility.com/partners/login.jsp" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Telus_Koodo.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://connect.freedommobile.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Freedom Mobile.jpg">
+          </a>
+      </div>
+	  
+  </div>
+  
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Gestion des comptes</h1>
+  <p><em>Les liens ci-dessous sont là pour gérer vos informations de connexion Bell/Virgin/Lucky</em></p>
+    <p><em>Assurez-vous qu'après 2 tentatives de connexion à Bell/Virgin/Lucky, vous réinitialisez le mot de passe, plutôt que de vous verrouiller.</em></p>
+  <div class="tabButtons">
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://www.infonet.bellmobility.ca/SelfServeLogin/Index" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Bell.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://thehub.virginplus.ca/SelfServeLogin/Index" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/VirginPlus_RedBlack_RGB.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://infonet.luckymobile.ca/SelfServeLogin/Index" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Lucky Mobile.jpg">
+          </a>
+      </div>
+</div>
+</div>
+
+<div class="tab" id="schedulingPayroll" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Horaire & Paie</h1>
+  <p><em>Visualisez votre paie et votre horraire en utilisant ces outils:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://workforcenow.adp.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/myOSL.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://workforceportal.elabor.com/ezLaborManagerNetRedirect/ClientLogin.aspx?lng=en-CA&flgn=1&webclk=T" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/ADP.png">
+          </a>
+		  <p><em>Utilisez ADP quand le système myOSL est en panne</em></p>
+      </div>
+          
+  </div>
+</div>
+
+<div class="tab" id="recruiting" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Outil de recruitement</h1>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://oslrs.icims.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/icims.png">
+          </a>
+      </div>
+
+  
+  </div>
+</div>
+
+<div class="tab" id="training" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> OSL Learn</h1>
+  <p><em>Cliquez ci-dessous pour accéder à votre formation:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://oslu.docebosaas.com/learn" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/LEARN logo.png">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="oslfuse" style="display: none;">
+<h1 class="tabTitle"><span style="color: #FFC220;">//</span> OSL FUSE & DOTS</h1>
+  <p><em>Cliquez ci-dessous pour accéder aux applications OSL:</em></p>
+  <div class="tabButtons">
+    
+    <div class="tabButton">
+          <a class="tabButtonLink" href="http://oslfuse.app.appery.io" target="_blank">
+            <img class="tabButtonImageFUSE" src="assets/images/tools/FUSEElecLogo.gif" alt="assets/images/tools/OSLFUSE.png">
+          </a>
+      </div>
+	  
+	  <div class="tabButton">
+          <a class="tabButtonLink" href="http://osldots.app.appery.io" target="_blank">
+            <img class="tabButtonImageFUSE" src="assets/images/tools/OSL_DOTS.png">
+          </a>
+      </div>
+	  
+  </div>
+</div>
+
+
+
+<div class="tab" id="safeCodes" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Codes pour coffre-fort</h1>
+  <p><em></em></p>
+  <div class="tabButtons">
+    
+      <iframe src='http://os1c0mb91.app.appery.io/' style='width: 800px; height: 550px' scrolling='yes'></iframe>
+    
+  </div>
+</div>
+
+
+<div class="tab" id="supply" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Commande des fournitures</h1>
+  <p><em>Cliquez ci-dessous pour commander des fournitures:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://www.grandandtoy.com/en/sites/core/business-solutions-small-medium.aspx?gclid=CJitmcv-79QCFYuLaQodcj8GXg/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/Grand & Toy.jpg">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="shipping" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Livraison</h1>
+  <p><em>Choisissez le fournisseur d'expédition:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.fedex.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/FedEx.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.purolator.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/Purolator.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.ups.com/canada/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/UPS.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://www.campusship.ups.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/CampusShip.png">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="carrierWebsites" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Sites web des fournisseurs</h1>
+  <p><em>Obtenez les informations officielles des fournisseurs:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.bell.ca/mobility" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Bell.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://virginplus.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/VirginPlus_RedBlack_RGB.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://www.luckymobile.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Lucky Mobile.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://unilogin.rogers.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Rogers_Fido.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://chatrwireless.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Chatr.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://telus.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Telus.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://koodomobile.com/en/on/index.shtml" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Koodo.jpg">
+          </a>
+      </div>
+            
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.freedommobile.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Freedom Mobile.jpg">
+          </a>
+      </div>
+    
+  </div>
+</div>
+
+
+<div class="tab" id="carrierRewards" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Récompenses et incitatifs</h1>
+  <p><em></em></p>
+  <div class="tabButtons">
+    
+	  <div class="tabButton">
+          <a class="tabButtonLink" href="https://oslperx.rewardsnation.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/OSLPERX.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://my-rewards.ca" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Bell_blue chips.png">
+          </a>
+      </div>
+     
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://secure.telusmobility.com/partners/login.jsp" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Telus_one.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://sales.koodomobile.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/carriers/Koodo_kash.png">
+          </a>
+      </div>
+	  
+      <div class="tabButton">
+          <a class="tabButtonLink" href="https://www.myprepaidcenter.com" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/mpc-top-bar-logo.png">
+          </a>
+      </div>      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="manufacturers" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Sites web des fabricants</h1>
+  <p><em></em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.samsung.com/ca/consumer/mobile/mobile-phones" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Samsung.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.apple.com/ca/iphone/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Apple.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.htc.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/HTC.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.lg.com/ca_en/mobile-phones/all-phones/all-phones.jsp" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/LG.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://consumer.huawei.com/ca/index.htm?utm_campaign=p10canada&utm_medium=search&utm_source=rogersmedia&utm_content=adcontet&utm_term=&source=rogersmedia&gclid=CLLLsu_879QCFRG2wAodaMAI_g" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Huawei.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.motorola.com/Consumers/CA-EN/Home" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Motorola.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.nokia.com/ca-en/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Nokia.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.sonymobile.com/global-en/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Sony.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.alcatel.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/manufacturers/Alcatel.jpg">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="competitors" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Sites web de la concurrence</h1>
+  <p><em></em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.bestbuy.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/Best Buy Mobile.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.wirelesswave.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/Wireless Wave.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.themobileshop.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/Mobile Shop.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.tboothwireless.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/Tbooth.jpg">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://mobilicity.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/Mobilicity.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.wowmobile.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/Wow.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.thesource.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/competitors/The Source.png">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+
+<div class="tab" id="forums" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Sites de références</h1>
+  <p><em>Obtenez les dernières nouvelle sans fil:</em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://mobilesyrup.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/Mobile Syrup.png">
+          </a>
+      </div>
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.howardforums.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/Howard Forums.png">
+          </a>
+      </div>
+      
+	  <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.gsmarena.com/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/tools/gsmarena.png">
+          </a>
+      </div>
+    
+  </div>
+</div>
+
+
+<div class="tab" id="walmart" style="display: none;">
+
+  <h1 class="tabTitle"><span style="color: #FFC220;">//</span> Walmart</h1>
+  <p><em></em></p>
+  <div class="tabButtons">
+    
+      
+      <div class="tabButton">
+          <a class="tabButtonLink" href="http://www.walmart.ca/" target="_blank">
+            <img class="tabButtonImage" src="assets/images/Walmart_site.png">
+          </a>
+      </div>
+      
+    
+  </div>
+</div>
+
+      </div>
+    
+    </main>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+  </body>
+</html>
